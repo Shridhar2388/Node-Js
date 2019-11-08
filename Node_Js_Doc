@@ -1,0 +1,152 @@
+Node Js(Ryan Dahl).
+
+Server Side Applicaton development.
+
+JavaScript use to run on Browser only
+
+Node js is runtime for JavaScript.
+	It can compile and execute JavaScript scripts.
+	It does this using the same V8 JavaScript engine that executes JavaScript in the Chrome browser.
+	
+	
+Browser will have JavaScript engine
+	V8 --> Chrome
+	Chakra --> IE
+	JS Core --> Safari
+	
+	
+V8 embeded in C++ environment resulted in Node.
+
+Host Client side application
+Build Backend web application.
+
+
+Features of Node
+
+	Relies on asynchronous APIs.
+
+	Event-driven.
+	
+	Coding in JavaScript.
+	
+	Built with scalability(Vertical, Horizontal) in mind.
+	
+	No multi-threading
+	
+	Comes with Node Package Manager(npm) and npmjs.com
+	
+Event loop:
+	Used to run asynchronous code.
+	
+	Node Js Single Threaded application.
+	
+	Node is not for CPU intense operation.
+	
+	
+	global and process are two objects provided in Node.
+	
+	
+	REPL ==> Read, Evaluate
+	
+	
+	.save
+	
+	.load
+	
+	.help
+	
+	.exit
+	
+let and var
+
+Scopes in JavaScript
+	Global
+	Function
+	
+let
+	Non pollutig global object
+	block scope
+	
+	
+	{
+		let userEmail="shridhar.kulkarni@socgen";		
+	}
+	console.log(userEmail); //this will throw error as userEmail is defined within block.
+	
+	
+	callback function:
+	
+	function passed as parameter to anothe function.
+	
+	setTimeout(function(){
+            console.log(name +' ' + this.greeting);
+        },0);
+		
+		
+	inner function:
+	
+	var obj={
+    greeting:'Good Morning!!',
+
+    greet:function(name){
+        //console.log(name +' ' + this.greeting);
+        setTimeout(function(){
+            console.log(name +' ' + this.greeting);
+        },0);
+    }
+}
+
+
+
+function is an object in JavaScript;
+
+funtion borrowing:
+
+	funtionality defined in one object using in other object
+	
+	
+Observer pattern
+
+	event emitter in Node JS:
+		Listening to event
+		Create/Generate event.
+		
+		
+		
+		
+		
+		
+		
+		
+		Node server.
+		
+			nodemon ==> Package to keep track of the changes and restart the code. It should be installed globally.
+				npm i nodemon -global
+			
+			lodash ==> For build in methods. One of the popular library available.
+			
+			
+			
+			
+			Express: Server SIDE RESTful API development.
+			
+			
+			
+			npm i express
+			
+			
+			npm i morgan // to have logging thrird party middleware
+			
+		npm i pug // templating engine	
+		
+		
+		DOT NET WEB API. Passing URL Encoded Parameters in POST method
+		
+		set the content type 
+		
+		content-type: 'application/x-www-form-urlencoded'
+		
+		
+		
+		
+	
